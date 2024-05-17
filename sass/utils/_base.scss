@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'SF UI Display Bold';
+    src: url('../../fonts/SFUIDisplay-Bold.eot');
+    src: url('../../fonts/SFUIDisplay-Bold.woff2') format('woff2'),
+        url('../../fonts/SFUIDisplay-Bold.woff') format('woff'),
+        url('../../fonts/SFUIDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display Medium';
+    src: url('../../fonts/SFUIDisplay-Medium.eot');
+    src: url('../../fonts/SFUIDisplay-Medium.woff2') format('woff2'),
+        url('../../fonts/SFUIDisplay-Medium.woff') format('woff'),
+        url('../../fonts/SFUIDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display Regular';
+    src: url('../../fonts/SFUIDisplay-Regular.eot');
+    src: url('../../fonts/SFUIDisplay-Regular.woff2') format('woff2'),
+        url('../../fonts/SFUIDisplay-Regular.woff') format('woff'),
+        url('../../fonts/SFUIDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display Thin';
+    src: url('../../fonts/SFUIDisplay-Thin.eot');
+    src: url('../../fonts/SFUIDisplay-Thin.woff2') format('woff2'),
+        url('../../fonts/SFUIDisplay-Thin.woff') format('woff'),
+        url('../../fonts/SFUIDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'SF UI Display Regular', sans-serif;
+    color: $white-text-color;
+    background-color: $background-color;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    cursor: pointer;
+        width: 200px;
+        height: 55px;
+        border-radius: 5px;
+        background: $primary-accent-color;
+        border: none;
+        outline: none;
+        padding: 0;
+    
+        text-align: center;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        color: $white-text-color;
+    
+        &:hover {
+            background-color: transparent;
+            color: $primary-accent-color;
+            border: 1px solid $primary-accent-color;
+        }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        // max-width: 425px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        // max-width: 375px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+}
