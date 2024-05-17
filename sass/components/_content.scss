@@ -7,6 +7,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        scroll-snap-align: start;
 
         &__wrapper {
             margin: 0 auto;

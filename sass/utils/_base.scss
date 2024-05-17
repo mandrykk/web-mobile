@@ -49,6 +49,12 @@ html {
     box-sizing: inherit;
 }
 
+.scroll {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
 body {
     margin: 0;
     padding: 0;

@@ -39,6 +39,13 @@ html {
           box-sizing: inherit;
 }
 
+.scroll {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -115,11 +122,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
     background-color: transparent;
   }
   .header__wrapper {
@@ -142,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-align: start;
   }
   .hero__wrapper {
     padding-top: 198px;
@@ -190,7 +193,8 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .iphone {
     height: 100vh;
-    margin-top: 80px;
+    padding-top: 80px;
+    scroll-snap-align: start;
   }
   .iphone__text-container {
     width: 286px;
@@ -244,6 +248,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-align: start;
   }
   .content__wrapper {
     margin: 0 auto;
@@ -330,7 +335,8 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .sale {
     height: 100vh;
-    margin-top: 92px;
+    padding-top: 92px;
+    scroll-snap-align: start;
   }
   .sale__container {
     width: 300px;
@@ -379,8 +385,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   .prepayment {
-    margin-top: 90px;
+    padding-top: 90px;
     height: 100vh;
+    scroll-snap-align: start;
   }
   .prepayment__container {
     width: 285px;

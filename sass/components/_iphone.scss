@@ -1,7 +1,8 @@
 @media screen and (max-width: 768px) {
     .iphone {
         height: 100vh;
-        margin-top: 80px;
+        padding-top: 80px;
+        scroll-snap-align: start;
 
         &__text-container {
             width: 286px;

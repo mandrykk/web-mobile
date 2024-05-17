@@ -1,7 +1,8 @@
 @media screen and (max-width: 768px) {
     .sale {
         height: 100vh;
-        margin-top: 92px;
+        padding-top: 92px;
+        scroll-snap-align: start;
 
         &__container {
             width: 300px;

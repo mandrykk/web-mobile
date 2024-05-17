@@ -1,7 +1,8 @@
 @media screen and (max-width: 768px) {
     .prepayment {
-        margin-top: 90px;
+        padding-top: 90px;
         height: 100vh;
+        scroll-snap-align: start;
         
         &__container {
             width: 285px;
